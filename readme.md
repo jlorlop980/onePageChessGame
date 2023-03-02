@@ -22,9 +22,9 @@ y usando todos los elementos creados en el proyecto anterior.
 
 
 ### Eventos interactivos
-1.Hay una navbar que se ilumina al pasar el ratón por encima.
-2.Una galería con efecto parallax que se arrastra y también funciona en mobile.
-3.Cartas que giran al hacer click o al tocar con el móvil que ademas contienen un audio.
+1. Hay una navbar que se ilumina al pasar el ratón por encima.
+2. Una galería con efecto parallax que se arrastra y también funciona en mobile.
+3. Cartas que giran al hacer click o al tocar con el móvil que ademas contienen un audio.
 
 ## Audio
 He usado varios formatos: mp3,acc,flac.

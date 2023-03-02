@@ -5,6 +5,7 @@
   --brown: #6a2626;
 }
 
+/*reset de estilos*/
 *{
   padding: 0px;
   margin: 0px;
@@ -12,11 +13,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
-
+/*Cambio el scroll para que sea más suave*/
 html {
 	scroll-behavior: smooth;
 }
 
+/*Cambio del header tamaño y color*/
 header{
   height: 10vh;
   background: linear-gradient(45deg, rgba(20,20,20,1) 0%, rgba(106,23,160,1) 78%);
@@ -26,15 +28,15 @@ header{
   align-items: center;
 
 }
+
 body{
   height: 400vh;
   
 }
 
-
+/*Elimino el estilo de los enlaces*/
 a{
   text-decoration: none;
-  color:red;
 }
 
 
@@ -47,6 +49,7 @@ a{
   height: 10vh;
 }
 
+/*Animación para el efecto de las letras*/
 @keyframes background-pan {
   from {
     background-position: 0% center;
@@ -56,23 +59,21 @@ a{
     background-position: -200% center;
   }
 }
-
+/*Efecto de las letras*/
 .gradientText{
   display: inline-block;
   position: relative;
   animation: background-pan 2s linear infinite;
   transition: 3s;
-  
   background: linear-gradient(90deg, rgba(56,56,56,1) 20%, rgba(106,23,169,1) 67%);;
-    background-size: 200%;
+  background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2rem;
   width: fit-content;
   white-space: nowrap;
-  
 }
-
+/*Enlaces de la "navBar"*/
 .anchor{
   position: absolute;
   z-index: 10000;
@@ -80,6 +81,7 @@ a{
   left: 50%;
 }
 
+/*Edicion simple de la sección*/
 #Introduccion{
 background-color:rgb(20,20,20);
 overflow: hidden;
@@ -96,6 +98,7 @@ padding: 0px;
   color:wheat;
 }
 
+/*Parte del código que se encarga del efecto de luz detrás que se utilizan ciertos selectores para comprobar el hover*/
 #cards{
   display: flex;
   flex-wrap: wrap;
@@ -176,7 +179,7 @@ padding: 0px;
 
 
 
-
+/*Sección de los fondos y ayuda para el efecto parallax aunque mayormente se encarga JS*/
 #Fondos{
   background-color:rgb(20,20,20);
   width: 100vw;
@@ -203,7 +206,7 @@ padding: 0px;
 
 
 
-
+/*Sección de los personajes con lals carts que se giran y el audio*/
 
 #Personajes{
   background-color:rgb(20,20,20);
@@ -213,7 +216,6 @@ padding: 0px;
   display: inline-block;
   height: 30vw;
   width: 40vh;
-/*   border: 1px solid #CCC; */
   margin: 40px 0;
   perspective: 600px;
 }
@@ -257,6 +259,7 @@ padding: 0px;
 
 }
 
+/*esto es la parte trasera con la historia del personaje*/
 .lore{
   padding: 5vmin;
   font-size: 1rem;
@@ -274,7 +277,7 @@ padding: 0px;
 
 
 
-
+/*La parte asociada al video*/
 #Inspiracion{
   background-color:rgb(20,20,20);
 }
@@ -299,7 +302,7 @@ padding: 0px;
 
 
 
-/*medias*/
+/*un media para la parte de los personajes que se viera mejor*/
 @media (max-width: 600px) {
   .cartitas{
     flex-direction: column;

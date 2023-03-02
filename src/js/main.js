@@ -12,7 +12,7 @@ document.getElementById("cards").onmousemove= e => {
 
 
 
-//Todo lo relativo a los fondos
+//Todo lo relativo a los fondos 
 
 const track = document.getElementById("image-track");
 
@@ -22,7 +22,7 @@ const handleOnUp = () => {
   track.dataset.mouseDownAt = "0";  
   track.dataset.prevPercentage = track.dataset.percentage;
 }
-
+//se usan los porcentajes y se guarda la ultima posición para que no se haga reset de la posición
 const handleOnMove = e => {
   if(track.dataset.mouseDownAt === "0") return;
   
@@ -34,7 +34,7 @@ const handleOnMove = e => {
         nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
   
   track.dataset.percentage = nextPercentage;
-  
+  //usando la api de animacion del navegador en js
   track.animate({
     transform: `translate(${nextPercentage}%, -50%)`
   }, { duration: 1200, fill: "forwards" });
@@ -46,7 +46,7 @@ const handleOnMove = e => {
   }
 }
 
-// añadido para que tambien funcione en movil
+// añadido varios eventos para que también funcione en movil
 
 window.onmousedown = e => handleOnDown(e);
 
@@ -61,7 +61,7 @@ window.onmousemove = e => handleOnMove(e);
 window.ontouchmove = e => handleOnMove(e.touches[0]);
 
 
-// para los personajes
+// para los personajes el efecto de dar la vuelta
 var cards = document.querySelectorAll('.carta');
 
 [...cards].forEach((card)=>{
