@@ -1,3 +1,8 @@
+:root{
+  --purple: #6a17a9;
+  --brown: #6a2626;
+}
+
 *{
   padding: 0px;
   margin: 0px;
@@ -11,7 +16,7 @@ html {
 
 header{
   height: 10vh;
-  background-color: aquamarine;
+  background: linear-gradient(45deg, rgba(20,20,20,1) 0%, rgba(106,23,160,1) 78%);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -34,6 +39,43 @@ a{
   height: 100vh;
 }
 
+.logo{
+  width: 10vh;
+  height: 10vh;
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  
+  to {
+    background-position: -200% center;
+  }
+}
+
+.gradientText{
+  display: inline-block;
+  position: relative;
+  animation: background-pan 2s linear infinite;
+  transition: 3s;
+  
+  background: linear-gradient(90deg, rgba(56,56,56,1) 20%, rgba(106,23,169,1) 67%);;
+    background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  width: fit-content;
+  white-space: nowrap;
+  
+}
+
+.anchor{
+  position: absolute;
+  z-index: 10000;
+  top: 50%;
+  left: 50%;
+}
 
 #Introduccion{
 background-color:rgb(20,20,20);
@@ -159,6 +201,13 @@ padding: 0px;
 #Personajes{
   background-color:wheat;
 }
+
+
+
+
+
+
+
 
 #Inspiracion{
   background-color:coral;
