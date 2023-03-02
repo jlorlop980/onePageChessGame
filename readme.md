@@ -5,7 +5,7 @@ git clone https://github.com/jlorlop980/onePageChessGame.git
 ```
 
 ```bash
- cd onePageChessgame
+cd onePageChessgame
 ```
 
 ```bash
