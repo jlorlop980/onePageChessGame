@@ -5,15 +5,13 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="./src/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chess Game</title>
+    <title>Hail to the Queen</title>
   </head>
   <body>
     
 
     <header>
       <img class="logo" src="./src/img/logo.png" alt="logo">
-      <h1 class="gradientText">Chess Game</h1>
-      
     </header>
 
     <main>
@@ -46,6 +44,9 @@
           </a>
 
       </section>
+
+
+
       <section class="prueba" id="Fondos">
         <p class="gradientText">Backgrounds</p>
         <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
@@ -54,15 +55,45 @@
           <img class="image" src="./src/img/bgPurple.jpg" alt="background Purple" draggable="false">
         </div>
       </section>
+
+
+
       <section class="prueba" id="Personajes">
         <h2 class="gradientText">Characters</h2>
+        <div class="cartitas">
+        <div class="scene scene--card">
+          <div class="carta">
+            <div class="card__face card__face--front">
+              <img class="personaje" src="src/img/Pawn_piece.svg" alt="personaje del peón">
+            </div>
+            <div class="card__face card__face--back">
+              <p class="lore">Once there was a lowly pawn on a chessboard who dreamed of becoming a queen. Despite its small size and limited movements, 
+                the pawn never lost hope and kept striving for promotion. Through careful planning and strategic moves, the pawn advanced 
+                towards the opposite end of the board.</p>
+            </div>
+          </div>
+        </div>
+        <div class="scene scene--card">
+          <div class="carta">
+            <div class="card__face card__face--front">
+              <img class="personaje" src="src/img/Caballo0.7.0.svg" alt="personaje del caballo">
+            </div>
+            <div class="card__face card__face--back">
+              <p class="lore">In the same chess game, there was a brave and cunning knight who saw the pawn as its enemy. The knight was determined to capture and eliminate the pawn, 
+                but the pawn was equally determined to evade the knight's attacks. The two pieces engaged in a fierce battle, each one trying to outmaneuver the other. </p>
+            </div>
+          </div>
+        </div>
+      </div>
       </section>
-      <section class="prueba" id="Inspiracion">Inspiración</section>
+
+
+
+      <section class="prueba" id="Inspiracion">
+        Inspiración
+      </section>
     </main>
 
-    <footer>
-
-    </footer>
     
     <script type="module" src="src/js/main.js"></script>
   </body>

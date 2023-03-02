@@ -19,7 +19,7 @@ header{
   background: linear-gradient(45deg, rgba(20,20,20,1) 0%, rgba(106,23,160,1) 78%);
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
 }
@@ -199,11 +199,70 @@ padding: 0px;
 
 
 #Personajes{
-  background-color:wheat;
+  background-color:rgb(20,20,20);
 }
 
+.scene {
+  display: inline-block;
+  height: 30vw;
+  width: 40vh;
+/*   border: 1px solid #CCC; */
+  margin: 40px 0;
+  perspective: 600px;
+}
 
+.personaje{
+  height: 30vw;
+  width: 40vh;
+}
 
+.carta {
+  height: 30vw;
+  width: 40vh;
+  position: relative;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.carta.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__face {
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  color: white;
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  background: wheat;
+  border-radius: 10px;
+}
+
+.card__face--back {
+  background: wheat;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+
+}
+
+.lore{
+  padding: 5vmin;
+  font-size: 1rem;
+}
+
+.cartitas{
+  display: flex;
+  position: relative;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+}
 
 
 

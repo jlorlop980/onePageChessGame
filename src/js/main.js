@@ -62,3 +62,11 @@ window.ontouchmove = e => handleOnMove(e.touches[0]);
 
 
 // para los personajes
+var cards = document.querySelectorAll('.carta');
+
+[...cards].forEach((card)=>{
+  card.addEventListener( 'click', function() {
+    card.classList.toggle('is-flipped');
+  });
+});
+  
