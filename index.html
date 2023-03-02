@@ -16,6 +16,7 @@
 
     <main>
       <section class="prueba" id="Introduccion">
+        <h3 class="description">hail to the queen is a fighting game with chess theme an the art style is vector</h3>
         <div id="cards">
 
           <a href="#Fondos">
@@ -64,23 +65,34 @@
         <div class="scene scene--card">
           <div class="carta">
             <div class="card__face card__face--front">
-              <img class="personaje" src="src/img/Pawn_piece.svg" alt="personaje del peón">
+              <img class="personaje" src="src/img/Pawn_piece.svg" alt="personaje del peón" draggable="false">
             </div>
             <div class="card__face card__face--back">
               <p class="lore">Once there was a lowly pawn on a chessboard who dreamed of becoming a queen. Despite its small size and limited movements, 
                 the pawn never lost hope and kept striving for promotion. Through careful planning and strategic moves, the pawn advanced 
                 towards the opposite end of the board.</p>
+                <audio  controls>
+                  <source src="./src/sounds/pawnSong.mp3" />
+                  <source src="./src/sounds/pawnSong.aac" />
+                  <source src="./src/sounds/pawnSong.flac" />
+                </audio>
             </div>
           </div>
         </div>
         <div class="scene scene--card">
           <div class="carta">
             <div class="card__face card__face--front">
-              <img class="personaje" src="src/img/Caballo0.7.0.svg" alt="personaje del caballo">
+              <img class="personaje" src="src/img/Caballo0.7.0.svg" alt="personaje del caballo" draggable="false">
             </div>
             <div class="card__face card__face--back">
-              <p class="lore">In the same chess game, there was a brave and cunning knight who saw the pawn as its enemy. The knight was determined to capture and eliminate the pawn, 
-                but the pawn was equally determined to evade the knight's attacks. The two pieces engaged in a fierce battle, each one trying to outmaneuver the other. </p>
+              <p class="lore">In the same chess game, there was a brave and cunning knight who saw the pawn as its enemy. The knight was determined to 
+                capture and eliminate the pawn, but the pawn was equally determined to evade the knight's attacks. The two pieces engaged in a fierce battle, 
+                each one trying to outmaneuver the other. </p>
+                <audio  controls>
+                  <source src="./src/sounds/knightSong.mp3" />
+                  <source src="./src/sounds/knightSong.aac" />
+                  <source src="./src/sounds/knightSong.flac" />
+                </audio>
             </div>
           </div>
         </div>
@@ -90,7 +102,14 @@
 
 
       <section class="prueba" id="Inspiracion">
-        Inspiración
+        <h2 class="gradientText">Inspiration</h2>
+        <div class="trailer">
+          <video class="video" controls>
+            <source src="./src/video/limbo.mp4" type="video/mp4" />
+            <source src="./src/video/limbo.webm" type="video/webm" />
+            Su navegador no soporta contenido multimedia.
+        </video>
+      </div>
       </section>
     </main>
 

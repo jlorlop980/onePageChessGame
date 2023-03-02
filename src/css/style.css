@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
 :root{
   --purple: #6a17a9;
   --brown: #6a2626;
@@ -7,6 +9,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -24,7 +27,7 @@ header{
 
 }
 body{
-  height: 500vh;
+  height: 400vh;
   
 }
 
@@ -82,10 +85,15 @@ background-color:rgb(20,20,20);
 overflow: hidden;
 align-items: center;
 display: flex;
+flex-direction: column;
+gap: 5vmin;
 justify-content: center;
 margin: 0px;
 padding: 0px;
+}
 
+.description{
+  color:wheat;
 }
 
 #cards{
@@ -102,12 +110,11 @@ padding: 0px;
 
 .card{
   background-color: rgba(255, 250, 255, 0.1);
-
   border-radius: 10px;
   cursor: pointer;
-  height: 20vw;
+  height: 20vmax;
   position: relative;
-  width: 20vw;
+  width: 20vmax;
 }
 
 .card:hover::before {
@@ -269,5 +276,32 @@ padding: 0px;
 
 
 #Inspiracion{
-  background-color:coral;
+  background-color:rgb(20,20,20);
+}
+
+
+.trailer{
+  height: 80vh;
+  width: 100vw;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video{
+  width: 100vw;
+  height: 80vh;
+}
+
+
+
+
+
+
+/*medias*/
+@media (max-width: 600px) {
+  .cartitas{
+    flex-direction: column;
+  }
 }
