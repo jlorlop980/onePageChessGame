@@ -33,3 +33,6 @@ Se encuentran en las cartas por detras, las licencias son libres, puede comproba
 ## Video
 He usado varios formatos: mp4 y webm.
 Se encuentra al final de la página, las licencias son libres, puede comprobarse en el readme del trabajo anterior.
+
+## Importante
+Alguna vez se tiene que recargar la página al cambiar entre version de escritorio y móvil para que funciones el efecto parallax.

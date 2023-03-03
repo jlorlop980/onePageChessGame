@@ -72,6 +72,7 @@ a{
   font-size: 2rem;
   width: fit-content;
   white-space: nowrap;
+  padding-left: 1rem;
 }
 /*Enlaces de la "navBar"*/
 .anchor{
@@ -306,5 +307,10 @@ padding: 0px;
 @media (max-width: 600px) {
   .cartitas{
     flex-direction: column;
+    gap: 15vmax;
   }
+  .personaje {
+    height: 30vh;
+    width: 40vw;
+}
 }

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hail to the Queen</title>
+    <script type="module" crossorigin src="/assets/index-6cd44a64.js"></script>
+    <link rel="stylesheet" href="/assets/index-2fa8ea29.css">
+  </head>
+  <body>
+    
+<!--Logo-->
+    <header>
+      <img class="logo" src="/assets/logo-0e1c4707.png" alt="logo">
+    </header>
+<!--Lmain-->
+    <main>
+      <!--Seccion con la introduccion y la "navbar"-->
+      <section class="prueba" id="Introduccion">
+        <h3 class="description">hail to the queen is a fighting game with chess theme an the art style is vector</h3>
+        <div id="cards">
+
+          <a href="#Fondos">
+            <div class="card">
+              <div class="card-border"></div>
+              <div class="card-content">
+                <p class="gradientText">Backgrounds</p>
+              </div>
+            </div>
+          </a>
+          <a href="#Personajes">
+            <div class="card">
+              <div class="card-border"></div>
+              <div class="card-content">
+                <p class="gradientText">Characters</p>
+              </div>
+            </div>
+          </a>
+          <a href="#Inspiracion">
+            <div class="card">
+              <div class="card-border"></div>
+              <div class="card-content">
+                <p class="gradientText">Inspiration</p>
+              </div>
+            </div>
+          </a>
+
+      </section>
+
+
+      <!--Sección de los fondos con efecto parallax-->
+      <section class="prueba" id="Fondos">
+        <p class="gradientText">Backgrounds</p>
+        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+          <img class="image" src="/assets/bgGreen-9630f727.png" alt="background Green" draggable="false">
+          <img class="image" src="/assets/bgOrange-4c957f7b.png" alt="background Orange" draggable="false">
+          <img class="image" src="/assets/bgPurple-5c094b4d.jpg" alt="background Purple" draggable="false">
+        </div>
+      </section>
+
+
+      <!--Sección con los personajes que son cartas con el audio y que giran-->
+      <section class="prueba" id="Personajes">
+        <h2 class="gradientText">Characters</h2>
+        <div class="cartitas">
+        <div class="scene scene--card">
+          <div class="carta">
+            <div class="card__face card__face--front">
+              <img class="personaje" src="/assets/Pawn_piece-40735b90.svg" alt="personaje del peón" draggable="false">
+            </div>
+            <div class="card__face card__face--back">
+              <p class="lore">Once there was a lowly pawn on a chessboard who dreamed of becoming a queen. Despite its small size and limited movements, 
+                the pawn never lost hope and kept striving for promotion. Through careful planning and strategic moves, the pawn advanced 
+                towards the opposite end of the board.</p>
+                <!--audio con varias funtentes-->
+                <audio  controls>
+                  <source src="/assets/pawnSong-e94af61e.mp3" />
+                  <source src="/assets/pawnSong-3cb2cc26.aac" />
+                  <source src="/assets/pawnSong-aeb7b6ef.flac" />
+                </audio>
+            </div>
+          </div>
+        </div>
+        <div class="scene scene--card">
+          <div class="carta">
+            <div class="card__face card__face--front">
+              <img class="personaje" src="/assets/Caballo0.7.0-ab128bf1.svg" alt="personaje del caballo" draggable="false">
+            </div>
+            <div class="card__face card__face--back">
+              <p class="lore">In the same chess game, there was a brave and cunning knight who saw the pawn as its enemy. The knight was determined to 
+                capture and eliminate the pawn, but the pawn was equally determined to evade the knight's attacks. The two pieces engaged in a fierce battle, 
+                each one trying to outmaneuver the other. </p>
+                <!--audio con varias funtentes-->
+                <audio  controls>
+                  <source src="/assets/knightSong-b8584044.mp3" />
+                  <source src="/assets/knightSong-87df50eb.aac" />
+                  <source src="/assets/knightSong-39806f9c.flac" />
+                </audio>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+
+      <!--Seccion con la parte de la inspiración que contiene el video con varias fuentes por si no se soporta-->
+      <section class="prueba" id="Inspiracion">
+        <h2 class="gradientText">Inspiration</h2>
+        <div class="trailer">
+          <video class="video" controls>
+            <source src="/assets/limbo-415e41e3.mp4" type="video/mp4" />
+            <source src="/assets/limbo-af1147f1.webm" type="video/webm" />
+            Su navegador no soporta contenido multimedia.
+        </video>
+      </div>
+      </section>
+    </main>
+
+    
+    
+  </body>
+</html>
